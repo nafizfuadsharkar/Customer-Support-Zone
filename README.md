@@ -1,5 +1,4 @@
-<body>
-  <div style="max-width: 800px; margin: 50px auto; font-family: Arial, sans-serif; line-height: 1.6;">
+
     <h1>React Questions and Answers</h1>
 
     <div>
@@ -26,5 +25,4 @@
       <h2>5. How is event handling done in React?</h2>
       <p>Event handling in React is done using camelCase event attributes on elements. You pass a function as the event handler rather than a string. React automatically handles event delegation and ensures that the handler works consistently across browsers.</p>
     </div>
-  </div>
-</body>
+

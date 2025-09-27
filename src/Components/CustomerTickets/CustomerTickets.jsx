@@ -33,7 +33,7 @@ const CustomerTickets = ({
               onClick={() => {
                 handleSelected(ticket);
               }}
-              className="card card-dash bg-base-100 w-96"
+              className="card card-dash bg-base-100 w-full max-w-md"
             >
               <div className="card-body">
                 <div className="flex justify-between">
@@ -55,7 +55,7 @@ const CustomerTickets = ({
                   </div>
                 </div>
                 <p>{ticket.description}</p>
-                <div className="flex justify-between">
+                <div className="flex flex-col md:flex-row justify-between">
                   <div className="flex gap-2">
                     <p>{ticket.id}</p>
                     <p
@@ -72,7 +72,7 @@ const CustomerTickets = ({
                   </div>
                   <div className="flex gap-2">
                     <p>{ticket.customer}</p>
-                    <img className="" src={calenderImg} alt="" />
+                    <img className="w-[25px] h-[25px]" src={calenderImg} alt="" />
                     <p>{ticket.createdAt}</p>
                   </div>
                 </div>

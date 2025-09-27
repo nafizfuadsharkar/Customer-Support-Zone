@@ -35,7 +35,9 @@ const Navbar = () => {
               <li>Contact</li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">CS - Ticket System</a>
+          <a className="btn  text-lg sm:text-xl md:text-2xl lg:text-3xl">
+            CS - Ticket System
+          </a>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-3 font-stretch-125% items-center">

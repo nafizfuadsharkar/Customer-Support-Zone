@@ -25,7 +25,7 @@ const CustomerTickets = ({
   return (
     <div>
       <h1 className="text-2xl font-semibold">Customer Tickets</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 my-2">
         {ticketData
           .filter((ticket) => !hiddenTickets.includes(ticket.id))
           .map((ticket) => (
@@ -33,7 +33,7 @@ const CustomerTickets = ({
               onClick={() => {
                 handleSelected(ticket);
               }}
-              className="card card-dash bg-base-100 w-full max-w-md"
+              className="card card-dash bg-base-300 w-full max-w-md"
             >
               <div className="card-body">
                 <div className="flex justify-between">

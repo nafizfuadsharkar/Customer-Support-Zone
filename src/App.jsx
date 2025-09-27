@@ -5,6 +5,7 @@ import CustomerTickets from "./Components/CustomerTickets/CustomerTickets";
 import Navbar from "./Components/Navbar/Navbar";
 import ResolvedTask from "./Components/ResolvedTask/ResolvedTask";
 import TaskStatus from "./Components/TaskStatus/TaskStatus";
+import Footer from "./Components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 
 const fetchTickets = async () => {
@@ -66,6 +67,7 @@ function App() {
           <ResolvedTask resolvedData={resolvedData}>Resolved</ResolvedTask>
         </div>
       </div>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

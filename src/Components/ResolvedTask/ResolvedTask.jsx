@@ -2,7 +2,7 @@ import React from "react";
 
 const ResolvedTask = ({ resolvedData }) => {
   return (
-    <div className="w-full bg-gray-400 p-2 rounded-xl mt-4">
+    <div className="w-full md:w-[350px] bg-gray-400 p-2 rounded-xl mt-4">
       <h2 className="text-2xl w-full font-semibold ">Resolved Task</h2>
       <div>
         {resolvedData.map((ticket) => (

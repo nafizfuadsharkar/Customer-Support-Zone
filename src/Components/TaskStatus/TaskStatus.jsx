@@ -16,7 +16,7 @@ const TaskStatus = ({
     setProgressCount(progressCount - 1);
   };
   return (
-    <div className="w-full bg-gray-400 p-2 rounded-xl">
+    <div className="w-full md:w-[350px] bg-gray-400 p-2 rounded-xl">
       <h2 className="text-2xl w-full font-semibold">Task Status</h2>
       <div>
         {seletedTicket.map((ticket) => (

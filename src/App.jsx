@@ -34,9 +34,12 @@ function App() {
   return (
     <div className="">
       <Navbar></Navbar>
-      <Banner progressCount={progressCount} resolvedCount={resolvedCount}></Banner>
+      <Banner
+        progressCount={progressCount}
+        resolvedCount={resolvedCount}
+      ></Banner>
 
-      <div className="flex max-w-[1200px] mx-auto gap-5">
+      <div className="flex flex-col md:flex-row max-w-[1200px] mx-auto gap-5 px-4">
         <Suspense
           fallback={<span className="loading loading-dots loading-xl"></span>}
         >
@@ -58,7 +61,7 @@ function App() {
             resolvedCount={resolvedCount}
             setResolvedCount={setResolvedCount}
             progressCount={progressCount}
-            setProgressCount ={setProgressCount}
+            setProgressCount={setProgressCount}
           ></TaskStatus>
           <ResolvedTask resolvedData={resolvedData}>Resolved</ResolvedTask>
         </div>

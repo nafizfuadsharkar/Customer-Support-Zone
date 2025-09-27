@@ -1,10 +1,10 @@
 import React from "react";
 import bnrImg from "../../assets/vector1.png";
 
-const Banner = ({progressCount, resolvedCount}) => {
+const Banner = ({ progressCount, resolvedCount }) => {
   return (
     <div className="max-w-[1200px] mx-auto">
-      <div className="flex justify-center gap-6 p-6">
+      <div className="flex flex-col sm:flex-row justify-center gap-6 p-6">
         {/* In-Progress Card */}
         <div className="w-full h-32 rounded-lg flex flex-col justify-center items-center text-white relative overflow-hidden bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
           {/* Background Pattern - top-left */}
